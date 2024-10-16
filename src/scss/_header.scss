@@ -1,0 +1,81 @@
+.header {
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #f6f6f6;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+  }
+
+  &__menu {
+    flex: 1 1 auto;
+  }
+  
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+  }
+  &__link {
+    text-transform: uppercase;
+    padding: 4px 8px;
+    text-decoration: none;
+    color: #141414;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  // logobox section
+  &__logobox {
+    display: flex;
+    gap: 8px;
+  }
+  &__logoimgbox {
+    width: 77px;
+    height: 77px;
+  }
+  &__logoimg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  &__logotextbox {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    gap: 2px;
+  }
+  &__logotoptext {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  &__logobottomtext {
+    font-size: 11px;
+  }
+  // end logobox section
+
+  &__downloadbox {}
+  &__downloadbtn {
+    background-color: #fff;
+    border: 1px solid #242424;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.23s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #242424;
+      color: #fff;
+    }
+  }
+}
+
